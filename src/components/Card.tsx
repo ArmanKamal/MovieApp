@@ -4,6 +4,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { FiThumbsUp } from 'react-icons/fi';
 
+interface ResultProps{
+  result:any
+}
+
 export default function Card({result}:ResultProps) {
   return (
     <div className='group cursor-pointer sm:hover:shadow-slate-400 sm:shadow-md
