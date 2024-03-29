@@ -1,21 +1,30 @@
 import React from 'react'
+import Card from './Card'
 
-interface ResultProps{
-  results: [
-    id: number,
-    original_title: string
-  ]
+export interface ResultProps{
+  id: string,
+  original_title: string,
+  poster_path: string,
+  backdrop_path: string,
+  overview: string,
+  title:string,
+  name:string,
+  release_date:string,
+  first_air_date:string,
+  vote_count:string,
+
 }
 
-export default function Result({results}) {
-  console.log(results)
+interface ResultsProps{
+  results: ResultProps[]
+}
+
+export default function Result({results}:ResultsProps) {
   return (
-    <div>
+    <div className='sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 max-w-6xl mx-auto py-4'>
         {
           results.map((result) => (
-              <div key={result.id}>
-                  <h2>{result.original_title}</h2>
-              </div>
+                  <Card key={result.id} result={result} />
           ))
         }
     </div>
