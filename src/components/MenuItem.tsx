@@ -1,10 +1,9 @@
 import Link from 'next/link'
-import { ReactNode } from 'react'
 
 interface MenuItemProps{
     title:string,
     address: string,
-    Icon: ReactNode
+    Icon: any
 }
 
 export default function MenuItem({title,address,Icon}:MenuItemProps) {
