@@ -11,6 +11,7 @@ export default function DarkModeSwitch() {
     useEffect(() => {
         setMounted(true)
     },[])
+    
   return (
     <div>
         {mounted &&

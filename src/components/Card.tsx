@@ -14,6 +14,7 @@ export default function Card({result}:ResultProps) {
                 width={500}
                 height={300}
                 className='sm:rounded-t-lg group-hover:opacity-75 duration-300'
+                alt='movie-image'
             >
             </Image>
             <div className='p-2'>

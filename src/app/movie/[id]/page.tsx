@@ -21,6 +21,7 @@ export default async function MoviePage({params}:MoviePageProps) {
               width={500}
               height={300}
               className='rounded-lg'
+              alt='movie-image'
               style={{ maxWidth:'100%', height:'100%'}}
               ></Image>
             <div className='p-2'>
